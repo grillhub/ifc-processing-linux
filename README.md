@@ -4,18 +4,11 @@ A Unity Engine-based backend service for processing Building Information Modelin
 
 ## Overview
 
-This backend service is developed using **Unity Engine** and is designed to run on **Linux dedicated servers**. It processes BIM IFC extension files and converts them to JSON format, specifically the **BDMJson** format as described in the research paper: [Building Data Model JSON (BDMJson)](https://dl.acm.org/doi/10.1145/3775050.3775051).
+This backend service is developed using **Unity Engine** and is designed to run on **Linux dedicated servers**. It processes BIM IFC extension files and converts them to JSON format, specifically the **BDMJson** format as described in the research paper: [BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization](https://dl.acm.org/doi/10.1145/3775050.3775051).
 
 The generated JSON files are then used by another pipeline to create 3D models, enabling a complete workflow from IFC files to interactive 3D visualizations.
 
 ## Architecture
-
-### Technology Stack
-- **Runtime Engine**: Unity Engine (headless/server build)
-- **Target Platform**: Linux (dedicated server)
-- **IFC Processing**: IfcOpenShell (IfcConvert)
-- **HTTP Server**: Built-in HTTP listener for REST API
-- **Data Format**: JSON (BDMJson schema)
 
 ### Processing Pipeline
 
@@ -100,7 +93,7 @@ Check the status of a specific processing job.
 
 The backend generates JSON files in the **BDMJson** (Building Data Model JSON) format, which is based on the research paper:
 
-> **Reference**: [Building Data Model JSON (BDMJson)](https://dl.acm.org/doi/10.1145/3775050.3775051)
+> **Reference**: [BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization](https://dl.acm.org/doi/10.1145/3775050.3775051)
 
 The BDMJson format includes:
 - **Brick Schema**: Semantic building data representation
@@ -112,7 +105,7 @@ The BDMJson format includes:
 
 This project implements the BDMJson format as described in:
 
-**Title**: Building Data Model JSON (BDMJson)  
+**Title**: BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization
 **DOI**: [10.1145/3775050.3775051](https://dl.acm.org/doi/10.1145/3775050.3775051)  
 **ACM Digital Library**: https://dl.acm.org/doi/10.1145/3775050.3775051
 

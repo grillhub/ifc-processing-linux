@@ -89,18 +89,6 @@ Check the status of a specific processing job.
    ./server.x86_64
    ```
 
-## BDMJson Format
-
-The backend generates JSON files in the **BDMJson** (Building Data Model JSON) format, which is based on the research paper:
-
-> **Reference**: [BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization](https://dl.acm.org/doi/10.1145/3775050.3775051)
-
-The BDMJson format includes:
-- **Brick Schema**: Semantic building data representation
-- **IFC Properties**: Extracted IFC element properties
-- **Geometry References**: Links to geometry files
-- **Hierarchical Structure**: Building → Floor → Space → Element relationships
-
 ## Research Reference
 
 This project implements the BDMJson format as described in:

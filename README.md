@@ -6,8 +6,6 @@ A Unity Engine-based backend service for processing Building Information Modelin
 
 This backend service is developed using **Unity Engine** and is designed to run on **Linux dedicated servers**. It processes BIM IFC extension files and converts them to JSON format, specifically the **BDMJson** format as described in the research paper: [BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization](https://dl.acm.org/doi/10.1145/3775050.3775051).
 
-The generated JSON files are then used by another pipeline to create 3D models, enabling a complete workflow from IFC files to interactive 3D visualizations.
-
 ## Architecture
 
 ### Processing Pipeline
@@ -27,7 +25,7 @@ The backend follows a multi-stage processing pipeline:
    - `.jsonobject` - Unity object structure
    - `.jsonchunk` - Chunked data for large models
 5. **Chunking**: Splits large models into manageable chunks for efficient loading
-6. **Thumbnail Generation**: Creates preview images for visualization
+6. **Thumbnail Generation**: Creates BIM preview images for visualization
 7. **Output Delivery**: Provides processed files for downstream 3D model generation
 
 ## Features
@@ -59,9 +57,6 @@ Process an IFC file and generate all output formats.
 - `selectedLOD` (string): Level of detail options (optional)
 - `csvFile*` (file): Optional CSV files for data enrichment
 
-### GET `/api/status`
-Get server status and available endpoints.
-
 ### GET `/api/status/{processingId}`
 Check the status of a specific processing job.
 
@@ -88,12 +83,4 @@ Check the status of a specific processing job.
    ```bash
    ./server.x86_64
    ```
-
-## Research Reference
-
-This project implements the BDMJson format as described in:
-
-**Title**: BIM MODIVIS: A Modular Framework for BIM-Based Smart Campus Data Integration and Visualization
-**DOI**: [10.1145/3775050.3775051](https://dl.acm.org/doi/10.1145/3775050.3775051)  
-**ACM Digital Library**: https://dl.acm.org/doi/10.1145/3775050.3775051
 

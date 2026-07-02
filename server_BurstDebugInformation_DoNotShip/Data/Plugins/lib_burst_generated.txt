@@ -102,6 +102,7 @@ Library: lib_burst_generated
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
 --compilation-defines=UNITY_SERVER
+--compilation-defines=UNITY_PRO_LICENSE
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
@@ -283,6 +284,7 @@ Library: lib_burst_generated
 --compilation-defines=NETSTANDARD
 --compilation-defines=NETSTANDARD2_1
 --compilation-defines=UNITY_SERVER
+--compilation-defines=UNITY_PRO_LICENSE
 --compilation-defines=ENABLE_CUSTOM_RENDER_TEXTURE
 --compilation-defines=ENABLE_DIRECTOR
 --compilation-defines=ENABLE_LOCALIZATION
